@@ -9,16 +9,12 @@
         body {
             width: 100%;
             height: 100vh;
-            /* background: #00d2ff;  
-            background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  
-            background: linear-gradient(to right, #3a7bd5, #00d2ff);  */
-            background: #B79891; 
-            background: -webkit-linear-gradient(to right, #94716B, #B79891); 
-            background: linear-gradient(to right, #94716B, #B79891); 
+            background: #e3f9ff;
         }
         .f {
             width: 100%;
-            max-width: 375px;
+            max-width: 325px;
+            background:#3a4452;
         }
         * {
             overflow: hidden;
@@ -27,107 +23,107 @@
 
 </head>  
   <body class="d-flex">
-    <div class="f rounded-1 bg-white bg-opacity-50 mx-auto my-auto pt-3 p-4 text-white d-grid align-content-start">
+    <div class="f rounded-2 mx-auto my-auto pt-3 p-4 text-white d-grid align-content-start">
         <h5 class="text-center">Kalkulator</h5>
         <input type="text" name="n" id="n" class="form-control text-end shadow-none border-0 form-control-lg text-bg-dark rounded-1" placeholder="0">
         <div class="row g-2 mt-1">
             <div class="col-3">
-                <button onclick="ac()" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="ac()" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     AC
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="mp()" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     -/+
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('%')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('%')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     %
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('/')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('/')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     ÷
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('7')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('7')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     7
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('8')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('8')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     8
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('9')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('9')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     9
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('*')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('*')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     x
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('4')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('4')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     4
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('5')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('5')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     5
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('6')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('6')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     6
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('-')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('-')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     -
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('1')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('1')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     1
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('2')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('2')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     2
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('3')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('3')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     3
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('+')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('+')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     +
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="c()" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="c()" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     C
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('0')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('0')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     0
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="i('.')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="i('.')" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     .
                 </button>
             </div>
             <div class="col-3">
-                <button onclick="h()" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-1 p-3">
+                <button onclick="h()" class="btn btn-lg text-bg-dark col-12 shadow-none border-0 rounded-5 p-3">
                     =
                 </button>
             </div>
@@ -140,11 +136,20 @@
         var u = document.getElementById('n');
 
             function i(l) {
-                u.value += l ;
+                u.value = u.value.toString() + l.toString();
             }
-
             function ac() {
                 u.value= '';
+            }
+
+            function mp() {
+                if (u.value !== '') {
+                    if (u.value.charAt(0) === '-') {
+                        u.value = u.value.slice(1);
+                    } else {
+                        u.value = '-' + u.value;
+                    }
+                }
             }
 
             function c() {
@@ -155,6 +160,20 @@
             function h() {
                 u.value = eval(u.value);
             }
+
+            document.addEventListener('keydown', function (event) {
+                const key = event.key;
+
+                if (!isNaN(key) || key === '.' || key === '+' || key === '-' || key === '*' || key === '/' || key === '%') {
+                    i(key);
+                } else if (key === 'Enter') {
+                    event.preventDefault(); 
+                    h();
+                } else if (key === 'Backspace') {
+                    c();
+                }
+            });
+
     </script>
     </body>
 </html>
